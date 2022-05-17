@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Career Path - Login</title>
+	<link rel="icon" href="../images/favicon.ico" type="image/ico" sizes="64x64">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Nagivage your career options and discuss with a mentor">
+    <meta name="author" content="AlphaResearch - Adwoa, Mansura and Elikem">
+    
+	<!--CDN Bootstrap and Jquery-->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	
+    <!--Font awesome for icons-->
+	<link rel="stylesheet" href="../fontawesome/css/all.css">
+
+	<!--Custom js, spinner and alert-->
+	<script type="text/javascript" src="../js/loading-spinner.js"></script>
+	<script type="text/javascript" src="../js/standard_js.js"></script>
+	
+	<!--Custom CSS-->
+	<style type="text/css">
+		.login-form {
+			width: 380px;
+	    	margin: 50px auto;
+		}
+	    .login-form form {
+	    	margin-bottom: 15px;
+	        background: #f7f7f7;
+	        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	        padding: 30px;
+	    }
+	    .login-form h2 {
+	        margin: 0 0 15px;
+	    }
+	    .form-control, .btn {
+	        min-height: 38px;
+	        border-radius: 2px;
+	    }
+	    .btn {        
+	        font-size: 15px;
+	        font-weight: bold;
+	    }
+	</style>
+</head>
+<body>
+
+	
+	<!--Login Form-->
+	<div class="login-form">
+
+		<!--Error Messages-->
+		<div class="alert alert-danger fade collapse" id="incorrect_em">
+		    Incorrect email format
+	    </div>
+	    <div class="alert alert-danger fade collapse" id="pass_emp">
+		    Password field is empty
+	    </div>
+	    <div class="alert alert-danger fade collapse" id="user_inactive">
+		    <strong>User is Inactive:</strong> Check email for activation link if new registration or contact admin with "Need Help?" below
+	    </div>
+	    <div class="alert alert-danger fade collapse" id="incorrect_up">
+		    <strong>Failed!</strong> Incorrect username or password
+	    </div>
+
+	    <form action="" method="post">
+	        <h2 class="text-center">Log in to Career Path</h2>       
+	        <div class="form-group">
+	            <input type="Email" class="form-control" placeholder="Email" required="required" id="umail" value="" maxlength="50">
+	        </div>
+	        <div class="form-group">
+	            <input type="password" class="form-control" placeholder="Password" required="required" id="upass" value="" maxlength="50">
+	        </div>
+	        <div class="form-group">
+	            <button type="submit" class="btn btn-block" id="loginbutton" style="background-color: #923D41; color: white;" onclick="loginvalidation()">Log in</button>
+	        </div>
+
+	        <div class="form-group text-center">
+	        	<input type="checkbox" class="form-check-input"  value="kaiMe" id="logrem" > Remember Me
+	        </div>
+	               
+	    </form>
+	    <p class="text-center"><a href="../login/register.php" style="color:#923D41; ">Register</a> | <a href="../index.php" style="color:#923D41; ">Home</a> | <a href="forgot_password.php" style="color:#923D41; ">Forgot Password?</a> | <a href="mailto:dsampah@ashesi.edu.gh?subject=CareerPath%20Enquiry" style="color:#923D41;">Need Help?</a></p>
+	</div>
+	
+</body>
+</html>
